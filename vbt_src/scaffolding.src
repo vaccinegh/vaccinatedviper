@@ -1,0 +1,17 @@
+//this is how the code looks
+//https://github.com/linuxgruven/dictionary ?
+print("                              Volk's Bruteforce Tool")
+print(char(10))
+print("                      [00:00:01] 94060 keys tested (47030 k/s)")
+print(char(10))
+print("                              KEY NOT FOUND :(")
+print(char(10))
+print("      Master Key    : CC BE A5 2F B2 D5 1F B5 94 1A FA 6E 29 54 38 DE")
+print("                      42 F7 7C D9 E1 BD D7 BC 77 38 36 BD 38 9C A0 9E")
+print(char(10))                      
+print("      Transient Key : EA C0 AF 07 24 7A 03 B6 93 87 12 70 1D F0 FB 91")
+print("                      39 0E 5C D2 97 1A 0C FA 8D F4 CC 09 EE 59 BA 31")
+print("                      62 3B 58 B7 F2 05 C8 AE 9F DC 8F E2 AC B2 41 29")
+print("                      FA F4 6F 1A C5 E7 EF 72 E1 A7 91 52 DC C3 76 DA")
+print(char(10))                      
+print("      EAPOL HMAC    : BC FC 43 55 AD BD B4 E6 16 DD 16 AA 20 15 D0 E3")
