@@ -1,0 +1,33 @@
+//-- !!!THIS FILE IS NOT COMPILED!!!
+//-- PURELY HERE FOR REFERENCE
+
+interop = get_custom_object()
+user = "user"
+pass = "pass"
+if params.len >= 2 then
+user = params[0]
+pass = params[1]
+else if params.len == 1 then
+user = params[0]
+end if
+ipscan = function(ip, routers)
+router = get_router(ip)
+for localIP in router.devices_lan_ip
+if routers.indexOf(localIP) != null then continue
+print(""+localIP)
+routers.push(router.local_ip)
+if get_router(localIP) then ipscan(localIP, routers)
+end for
+end function
+if params.len >= 2 and pass == "deepscan" then
+ip = user
+if not is_valid_ip(ip) then; print("IP "+ip+" not found!"); return; end if
+print(" ")
+print(""+get_router(ip).local_ip)
+ipscan(ip, [])
+print(" ")
+end if
+interop.gshell = get_shell(user, pass)
+interop.gcurrentUser = active_user
+interop.glib = include_lib(user)
+interop.gcryptTools = include_lib(user)

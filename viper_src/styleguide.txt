@@ -1,0 +1,177 @@
+// logopart
+
+###################################
+# Vaccinated Viper                #
+#                                 #
+# One To Heal Them All            #
+#                 - Vaccine       #
+###################################
+
+
+Version: Undefined
+
+LIBRARY     PUBLICIP LOCALIP   VERSION  
+-------     -------- -------   -------  
+metaxploit  1.1.1.1  127.0.0.1  10.1.9   
+crypto      1.1.1.1  127.0.0.1  1.0.0
+
+// shell
+
+———(root@viper)——[1.1.1.1]——[127.0.0.1]——[START]
+||-#
+
+// help
+
+COMMAND        ARGUMENTS                               DESCRIPTION                                           
+-------        ---------                               -----------                                           
+help           [COMMAND]                               Displays the help page.                               
+clear          [N/A]                                   Clears the screen.                                    
+credits        [N/A]                                   Shows everyone that helped with Viper.                
+nmap           [IP/RANDOM]                             Scans a network for open ports.                       
+exploitscan    [LIB/IP] [PORT] (PASS/LANIP)            This command will scan a library or IP for exploits.  
+exploit        [IP/LIB] (PORT) [MEM] [VULN] (IP/PASS)  Exploits a target library or service.                 
+targets        [N/A]                                   Shows all available targets.                          
+use            [INDEX]                                 Uses a selected target.                               
+back           [N/A]                                   Backs out to the previous session.                    
+deltarget      [INDEX]                                 Deletes a target from the targets list.               
+ls             [PATH]                                  Lists files inside a directory.                       
+cat            [PATH]                                  Prints the contents of a file.                        
+ps             [N/A]                                   Shows all running processes on a computer.            
+corruptlogs    [N/A]                                   Corrupts the logfile.                                 
+buffer         (LEN/ALL)                               Shows used commands.                                  
+nslookup       [DOMAIN]                                Returns the IP of a domain.                           
+whois          [IP]                                    Returns whois information.                            
+scanlib        [PATH]                                  Returns library version.                              
+addobject      [N/A]                                   Adds the current session to targets.                  
+fs             [N/A]                                   Lists the whole filesystem.                           
+exec           [PATH]                                  Executes a program.                                   
+kill           [PID/ALL]                               Kills a process.                                      
+mv             [PATH] [DESTPATH]                       Moves a file or directory.                            
+cp             [PATH] [DESTPATH]                       Copies a file or directory.                           
+rm             [PATH]                                  Removes a file or directory.                          
+touch          [PATH]                                  Creates a file.                                       
+mkdir          [PATH]                                  Creates a directory.                                  
+write          [CONT] [>>/>] [PATH]                    Writes to a file.                                     
+compile        [SRCPATH] [DESTPATH]                    Compiles a program from source.                       
+chmod          (-R) [PERMS] [PATH]                     Chmods a file or directory.                           
+chown          (-R) [OWNER] [PATH]                     Changes the owner of a file or directory.             
+chgrp          (-R) [GROUP] [PATH]                     Changes the group of a file or directory.             
+passwd         [USER] [PASSWORD]                       Changes the password of a user.                       
+adduser        [USER] [PASS]                           Adds a user to the computer.                          
+deluser        [USER]                                  Deletes a user from the computer.                     
+groups         [USER]                                  Shows the groups of a user.                           
+addgroup       [USER] [GROUP]                          Adds a user to a group.                               
+delgroup       [USER] [GROUP]                          Removes a user from a group.                          
+get            [REMPATH] [DESTPATH]                    Downloads a file.                                     
+put            [HOSTPATH] [DESPATH]                    Downloads a file.                                     
+sniffer        (-save)                                 Starts a sniffer.                                     
+secure         [-home/-server]                         Secures a pc or server.                               
+wipe           (-y)                                    Wipes a machine.                                      
+addvar         [KEY] [VAL]                             Adds a variable to the list of variables.             
+delvar         [KEY]                                   Removes a variable to the list of variables.          
+vars           [N/A]                                   Lists all the available variables.                    
+gpg            [-e/-d] [KEY] [PATH/STRING]             Encrypts/decrypts a string or file.                   
+md5            [STRING]                                Hashes a string with the md5 hash algorithm.          
+sha256         [STRING]                                Hashes a string with the sha256 algorithm.            
+airmon         [START/STOP] [NETDEVICE]                Puts network card into monitor mode.                  
+iwlist         [NETDEVICE]                             Shows available networks.                             
+aireplay       [BSSID] [ESSID] [PWR]                   Generates a file.cap file.                            
+aircrack       [PATH]                                  Cracks a file.cap file.                               
+shell          [N/A]                                   Starts a shell, Viper will quit!!                     
+loop           [IP] [PORT] [MEM] [VULN] [IP/PASS]      Loops over an exploit, open Map.exe to stop.          
+ssh            [USER@PASSWORD] [IP] (PORT)             Connects to a service using ssh.                      
+sudo           [USER] [PASS] (JUMPPATH)                Changes the shell to another user.                    
+jump           [PATH] (NAME)                           Creates a jump file.                                  
+msfvenom       [IP] [PORT] [PROC]                      Starts a reverse shell.                               
+msfconsole     [N/A]                                   Starts a listiner for incomming rshells.              
+grab           [BANK/MAIL/ALL]                         Grabs all banks and emails.                           
+findlib        [LIB] [VERSION]                         Scans greyhack for a library.                         
+deepscan       [IP]                                    Scans every IP behind a router.                       
+apt-get        [N/A]                                   Apt client.                                           
+libs           [N/A]                                   Shows all imported libraries.                         
+uselib         [INDEX]                                 Select a library.                                     
+getlib         [PATH] [JUMPFILE]                       Imports a library.                                    
+dellib         [INDEX]                                 Deletes a library from the library list.              
+crack          [HASH]                                  Cracks an MD5 hash.                                   
+getviper       [PATH] (ARGS)                           Launches another instance of Viper.                   
+exit           [N/A]                                   Exits Viper.                                          
+save-settings  [N/A]                                   Saves settings.                                       
+load-theme     [N/A]                                   Reloads theme.                                        
+return         [N/A]                                   Returns to the starting point.                        
+echo           [STRING]                                Prints text to the screen.
+
+// credits
+
+Maintainer: Volk
+Viper is created by Volk.
+My special thanks go to Eraser,
+for helping me refactor Viper into a more effecient program.
+
+// nmap
+
+IP: 1.1.1.1
+ESSID: Thoneok_6OTT
+BSSID: 50:74:17:FF:92:69
+
+HOST         PORT  FORWARDED  STATE   SERVICE        VERSION  
+----         ----  ---------  -----   -------        -------  
+192.168.0.1  0     TRUE       OPEN    kernel_router  5.4.8    
+192.168.0.2  22    FALSE      OPEN    ssh            1.0.0    
+192.168.0.1  8080  FALSE      CLOSED  unknown        unknown  
+10.0.14.1    8080  FALSE      CLOSED  http           1.0.0    
+10.0.21.5    8080  FALSE      CLOSED  http           1.0.0    
+172.16.22.1  8080  FALSE      CLOSED  http           1.0.0
+
+IP: 189.235.63.87
+ESSID: Servalu
+BSSID: 0C:6E:9D:C0:81:93
+
+HOST         PORT  FORWARDED  STATE   SERVICE        VERSION  
+----         ----  ---------  -----   -------        -------  
+192.168.0.1  0     TRUE       OPEN    kernel_router  1.1.6    
+192.168.0.2  22    TRUE       OPEN    ssh            1.7.5    
+192.168.0.2  80    TRUE       OPEN    http           1.7.4    
+192.168.0.1  8080  FALSE      CLOSED  http           1.0.0
+
+// exploitscan
+
+====================
+0x0
+--------------------
+xyz
+--------------------
+.overflow
+computer: ip
+objectType type: type
+====================
+
+// targets
+
+INDEX  USER          PUBLICIP      LANIP       OBJECT    
+-----  ----          --------      -----       ------    
+0      anon          1.1.1.1       127.0.0.1   object_type
+
+// ls
+
+permissions  user  group  name    
+-----------  ----  -----  ----    
+drwxr-xr-x   root  staff  etc
+
+// fs
+
+»drwxr--r-- root root /
+
+――»drwxr-xr-x root staff /etc
+――――»-rwxr-xr-x root staff passwd
+――――»-rwxr-xr-x root staff xorg.conf
+――――»-rwxr-xr-x root staff fstab
+
+// libs
+
+INDEX  LIBRARY     PUBLICIP LOCALIP   VERSION  
+-----  -------     -------- -------   -------  
+0      metaxploit  1.1.1.1  127.0.0.1  10.1.9   
+1      crypto      1.1.1.1  127.0.0.1  1.0.0    
+2      aptclient   1.1.1.1  127.0.0.1  1.0.1
+
+//

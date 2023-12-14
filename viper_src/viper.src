@@ -1,0 +1,19 @@
+//-- Vaccinated Viper
+//-- By the Vaccine Development Team
+//-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//-- Compilation instructions:
+//-- Get root access (sudo -s)
+//-- Make a folder named "viper_vac" in /root
+//-- Make a folder named "lib" in /root/viper_vac
+//-- Compile all .src files from the lib folder here into the lib folder you just made
+//-- Compile viper.src
+//-- Profit
+
+//-- : -= Lib imports start here =-
+
+//-- lib/utils.o
+import_code("/root/viper_vac/lib/utils.o")
+//-- lib/commands.o
+import_code("/root/viper_vac/lib/commands.o")
+
+//-- : -= Logic starts here =-
